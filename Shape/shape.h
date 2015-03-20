@@ -12,7 +12,7 @@ namespace ShapeLibrary
 	{
 	public:
 		void add(Point _point);
-		void draw();
+		virtual void draw() = 0;
 		Point getPoint(unsigned int _index);
 	protected:
 		IWindowAPI * windowAPI;

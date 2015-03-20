@@ -7,5 +7,6 @@ namespace ShapeLibrary
 	{
 	public:
 		OpenPolyline(IWindowAPI &_windowAPI);
+		void draw();
 	};
 }
