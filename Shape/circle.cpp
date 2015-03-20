@@ -18,5 +18,6 @@ void Circle::setCenter(Point _point)
 }
 void Circle::setRadius(int _radius)
 {
+	if (_radius < 0) throw invalid_argument("the radius is too small");
 	radius = _radius;
 }
