@@ -23,5 +23,5 @@ void Rectangle::draw()
 {
 	windowAPI->setDrawingColor(lineColor);
 	windowAPI->drawRectangle(*position,width,height);
-
+	windowAPI->fillRectangle(*position, width, height);
 }

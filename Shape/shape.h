@@ -14,6 +14,10 @@ namespace ShapeLibrary
 		void add(Point _point);
 		virtual void draw() = 0;
 		Point getPoint(unsigned int _index);
+		void setFillColor(Color _color);
+		void setLineColor(Color _color);
+		Color getFillColor();
+		Color getLineColor();
 	protected:
 		IWindowAPI * windowAPI;
 		vector<Point> point;
