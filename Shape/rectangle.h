@@ -10,9 +10,10 @@ namespace ShapeLibrary
 		void setPosition(Point _point);
 		void setHeight(unsigned int _height);
 		void setWidth(unsigned int _width);
-	
+		void draw();
 	private:
 		unsigned int height;
 		unsigned int width;
+		Point * position;
 	};
 }

@@ -8,7 +8,7 @@ Rectangle::Rectangle(IWindowAPI & _windowAPI)
 }
 void Rectangle::setPosition(Point _point)
 {
-	/*position = _point;*/
+	position = &_point;
 }
 
 void Rectangle::setHeight(unsigned int _height)
@@ -18,4 +18,10 @@ void Rectangle::setHeight(unsigned int _height)
 void Rectangle::setWidth(unsigned int _width)
 {
 	width = _width;
+}
+void Rectangle::draw()
+{
+	windowAPI->setDrawingColor(lineColor);
+	windowAPI->drawRectangle(*position,width,height);
+
 }
