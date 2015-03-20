@@ -7,13 +7,13 @@ namespace ShapeLibrary
 	{
 	public:
 		Rectangle(IWindowAPI & _windowAPI);
-		void setPosition(Point _point);
-		void setHeight(unsigned int _height);
-		void setWidth(unsigned int _width);
+		void setPosition(const Point _point);
+		void setHeight(const int _height);
+		void setWidth(const int _width);
 		void draw();
 	private:
-		unsigned int height;
-		unsigned int width;
+		int height;
+		int width;
 		Point * position;
 	};
 }
