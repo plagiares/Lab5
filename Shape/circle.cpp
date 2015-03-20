@@ -8,6 +8,7 @@ Circle::Circle(IWindowAPI& _windowAPI)
 }
 void Circle::draw()
 {
+	if (center == nullptr) throw runtime_error("the center hasn't been instanciated");
 	windowAPI->setDrawingColor(lineColor);
 	windowAPI->drawCircle(*center, radius);
 	windowAPI->fillCircle(*center, radius);

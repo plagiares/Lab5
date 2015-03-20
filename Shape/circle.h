@@ -11,7 +11,7 @@ namespace ShapeLibrary
 		void setRadius(const int _radius);
 		void draw();
 	private:
-		Point * center;
+		Point * center = nullptr;
 		int radius;
 	};
 }
