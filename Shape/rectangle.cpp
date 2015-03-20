@@ -23,6 +23,7 @@ void Rectangle::setWidth(int _width)
 }
 void Rectangle::draw()
 {
+	if (position == nullptr) throw runtime_error("Position point has not been set");
 	windowAPI->setDrawingColor(lineColor);
 	windowAPI->drawRectangle(*position,width,height);
 	windowAPI->fillRectangle(*position, width, height);

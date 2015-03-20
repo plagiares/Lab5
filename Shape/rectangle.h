@@ -14,6 +14,6 @@ namespace ShapeLibrary
 	private:
 		int height;
 		int width;
-		Point * position;
+		Point * position = nullptr;
 	};
 }
