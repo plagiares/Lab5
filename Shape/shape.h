@@ -11,7 +11,7 @@ namespace ShapeLibrary
 	class Shape
 	{
 	public:
-		void add(Point _point);
+		virtual void add(Point _point);
 		virtual void draw() = 0;
 		Point getPoint(unsigned int _index);
 		void setFillColor(Color _color);
