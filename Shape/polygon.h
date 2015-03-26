@@ -9,8 +9,9 @@ namespace ShapeLibrary
 		Polygon(IWindowAPI &_windowAPI);
 		void draw();
 		void add(Point _point);
-		bool isAlreadyInLine(const Point _point);
-		bool isCrossingLine(const Point _point);
+		bool isOnLine(const Point & _point);
+		bool isCrossingLine(const Point & _point);
+
 	private:
 		vector<int> xAxisTable;
 		vector<int> yAxisTable;
